@@ -1265,8 +1265,17 @@ details p {
   margin-top: 24px;
 }
 
+.ai-feature-copy .ai-agent-eyebrow {
+  margin-top: 34px;
+  color: rgba(29, 29, 31, .52);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 750;
+  letter-spacing: .04em;
+}
+
 .ai-agent-groups {
-  margin-top: 38px;
+  margin-top: 10px;
   border-top: 1px solid var(--line);
 }
 
@@ -1287,6 +1296,9 @@ details p {
 }
 
 .ai-agent-group ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1296,17 +1308,19 @@ details p {
   display: flex;
   align-items: center;
   gap: 14px;
-  min-height: 56px;
-  padding: 7px 0;
+  min-height: 74px;
+  padding: 12px 14px;
   color: var(--ink);
-  border-bottom: 1px solid rgba(0, 0, 0, .06);
-  font-size: 20px;
+  border: 1px solid rgba(0, 0, 0, .07);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .76);
+  font-size: 17px;
   line-height: 1.35;
   font-weight: 720;
 }
 
 .ai-agent-group li:last-child {
-  border-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .07);
 }
 
 .ai-agent-mark {
@@ -4978,6 +4992,10 @@ details p {
 
   .ai-agent-group h3 {
     margin: 0;
+  }
+
+  .ai-agent-group ul {
+    grid-template-columns: 1fr;
   }
 
   .ai-agent-group li {
