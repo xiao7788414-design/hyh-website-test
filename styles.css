@@ -2192,6 +2192,43 @@ details p {
   gap: 38px 24px;
 }
 
+.online-course-grid--compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px 16px;
+}
+
+.online-course-grid--compact .online-course-card-copy {
+  padding: 14px;
+}
+
+.online-course-grid--compact .online-course-price {
+  margin-bottom: 10px;
+}
+
+.online-course-grid--compact .online-course-price strong {
+  font-size: 22px;
+}
+
+.online-course-grid--compact .online-course-price--free strong {
+  font-size: 18px;
+}
+
+.online-course-grid--compact .online-course-card h5 {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#online-course .online-course-grid--compact .online-course-description {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.online-course-grid--compact .online-course-cta {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
 .online-course-card {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -2278,6 +2315,12 @@ details p {
 
 .online-course-cta:hover {
   color: var(--ink);
+}
+
+@media (max-width: 980px) and (min-width: 681px) {
+  .online-course-grid--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 680px) {
