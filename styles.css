@@ -6310,3 +6310,47 @@ a.news-social-card:focus-visible {
     font-size: 22px;
   }
 }
+
+/* Homepage: keep the hero headline unchanged and reduce later display titles by 30%. */
+.home-page .section-title h2 {
+  font-size: clamp(32.2px, 3.01vw, 49px);
+}
+
+.home-page .home-million-award-copy > h2 {
+  font-size: clamp(29.4px, 2.94vw, 47.6px);
+}
+
+.home-page .book-proof h2,
+.home-page .method-book-layout h2,
+.home-page .one-thing-block h3,
+.home-page .ai-feature-copy h2 {
+  font-size: clamp(32.2px, 2.87vw, 47.6px);
+}
+
+.home-page .service-mode-heading,
+.home-page .values-heading h2 {
+  font-size: clamp(29.4px, 2.8vw, 46.2px);
+}
+
+@media (max-width: 980px) {
+  .home-page .home-million-award-copy > h2 {
+    font-size: 26.6px;
+  }
+
+  .home-page .book-proof h2,
+  .home-page .one-thing-block h3,
+  .home-page .ai-feature-copy h2,
+  .home-page .service-mode-heading,
+  .home-page .values-heading h2,
+  .home-page .section-title h2 {
+    font-size: 23.8px;
+  }
+
+  .home-page .featured-cases-section .section-title h2 {
+    font-size: 14.7px;
+  }
+
+  .home-page .method-book-layout h2 {
+    font-size: 19.6px;
+  }
+}
