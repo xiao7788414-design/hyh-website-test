@@ -931,8 +931,8 @@ details p {
 
 .home-million-award-layout {
   display: grid;
-  grid-template-columns: minmax(300px, .82fr) minmax(0, 1.18fr);
-  gap: clamp(48px, 6vw, 96px);
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 72px;
   align-items: center;
 }
 
@@ -945,8 +945,8 @@ details p {
 }
 
 .home-million-award-visual img {
-  width: min(430px, 100%);
-  max-height: 640px;
+  width: min(300px, 100%);
+  max-height: 480px;
   object-fit: contain;
   filter: drop-shadow(0 26px 40px rgba(70, 35, 0, .2));
 }
@@ -958,7 +958,7 @@ details p {
 .home-million-award-kicker {
   margin: 0 0 16px;
   color: var(--red);
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 850;
   letter-spacing: .06em;
 }
@@ -978,6 +978,18 @@ details p {
   font-size: 18px;
   font-weight: 560;
   line-height: 1.75;
+}
+
+.home-million-award-more {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--red);
+  font-weight: 850;
+  text-indent: 0;
+}
+
+.home-million-award-more:hover {
+  color: var(--ink);
 }
 
 .home-million-award-upcoming {
@@ -1034,8 +1046,12 @@ details p {
   }
 
   .home-million-award-visual img {
-    width: min(330px, 82vw);
-    max-height: 480px;
+    width: min(280px, 100%);
+    max-height: 420px;
+  }
+
+  .home-million-award-kicker {
+    font-size: 20px;
   }
 
   .home-million-award-copy > h2 {
