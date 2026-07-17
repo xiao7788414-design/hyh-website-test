@@ -1919,6 +1919,26 @@ details p {
   line-height: 1.25;
 }
 
+#online-course .latest-course-price {
+  display: flex;
+  gap: 3px;
+  align-items: baseline;
+  margin: 12px 0 0;
+  color: var(--red);
+  line-height: 1;
+}
+
+.latest-course-price small,
+.latest-course-price span {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+#online-course .latest-course-price strong {
+  font-size: 30px;
+  font-weight: 880;
+}
+
 #online-course .latest-course-tagline {
   margin: 8px 0 0;
   color: var(--ink);
