@@ -3652,6 +3652,32 @@ details p {
   font-weight: 850;
 }
 
+.brand-cost-principle p {
+  text-indent: 0;
+}
+
+.brand-cost-list {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 0;
+  color: rgba(29, 29, 31, .72);
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 560;
+  list-style: none;
+}
+
+.brand-cost-list li {
+  display: grid;
+  grid-template-columns: 3.2em minmax(0, 1fr);
+}
+
+.brand-cost-list span {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .slogan-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
