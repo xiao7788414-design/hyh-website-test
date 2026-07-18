@@ -6402,6 +6402,9 @@ a.news-social-card:focus-visible {
 .case-longform-main { padding-bottom: 128px; }
 .case-longform-shell { width: min(1180px, 100%); }
 .case-longform-hero { margin-bottom: 24px; }
+.case-longform-hero--stacked { grid-template-columns: 1fr; }
+.case-longform-hero--stacked .case-detail-hero-media { min-height: 0; }
+.case-longform-hero--stacked .case-detail-hero-media img { width: 100%; height: auto; min-height: 0; object-fit: contain; }
 .case-longform-title { margin: 22px 0 0; color: #111; font-size: clamp(25px, 3vw, 38px); font-weight: 760; line-height: 1.24; letter-spacing: -.035em; }
 .case-article-meta { margin: 24px 0 0; color: #777; font-size: 14px; line-height: 1.6; }
 .case-article-body { width: 100%; box-sizing: border-box; margin: 0 auto; padding: clamp(38px, 7vw, 82px) clamp(22px, 7vw, 86px); border-radius: 24px; background: #fff; box-shadow: 0 18px 60px rgba(0, 0, 0, .045); }
