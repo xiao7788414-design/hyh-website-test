@@ -6397,3 +6397,39 @@ a.news-social-card:focus-visible {
   .case-detail-gallery { grid-template-columns: 1fr; }
   .case-detail-gallery img { min-height: 0; }
 }
+
+/* PDF-sourced long-form case studies */
+.case-longform-main { padding-bottom: 128px; }
+.case-longform-shell { width: min(1180px, 100%); }
+.case-longform-hero { margin-bottom: 24px; }
+.case-longform-title { margin: 22px 0 0; color: #111; font-size: clamp(25px, 3vw, 38px); font-weight: 760; line-height: 1.24; letter-spacing: -.035em; }
+.case-article-meta { margin: 24px 0 0; color: #777; font-size: 14px; line-height: 1.6; }
+.case-article-body { max-width: 900px; margin: 0 auto; padding: clamp(38px, 7vw, 82px) clamp(22px, 7vw, 86px); border-radius: 24px; background: #fff; box-shadow: 0 18px 60px rgba(0, 0, 0, .045); }
+.case-article-fragment { margin: 0; }
+.case-article-fragment p { margin: 0 0 22px; color: #292929; font-size: 17px; font-weight: 450; line-height: 1.9; text-indent: 2em; }
+.case-article-fragment h2,
+.case-article-fragment h3 { color: #111; line-height: 1.3; }
+.case-article-fragment h2 { margin: 64px 0 12px; font-size: clamp(42px, 6vw, 68px); letter-spacing: -.05em; }
+.case-article-fragment h3 { margin: 40px 0 18px; font-size: clamp(23px, 3vw, 32px); letter-spacing: -.035em; }
+.case-article-fragment:first-child h3:first-child { margin-top: 0; }
+.case-article-fragment .case-article-caption { margin: -4px 0 18px; color: #737373; font-size: 13px; text-align: center; text-indent: 0; }
+.case-article-images { display: grid; gap: 18px; margin: 28px 0 34px; }
+.case-article-images figure { margin: 0; overflow: hidden; border-radius: 14px; background: #f2f2ef; }
+.case-article-images img { display: block; width: 100%; height: auto; }
+.case-article-source { margin-top: 72px; padding: 34px; border: 1px solid #e6e6e2; border-radius: 18px; background: #fafaf8; }
+.case-article-source h2 { font-size: 25px; }
+.case-article-source p { font-size: 14px; line-height: 1.75; }
+
+@media (max-width: 780px) {
+  .case-longform-main { padding-bottom: 80px; }
+  .case-longform-hero { margin-bottom: 16px; }
+  .case-longform-title { font-size: 25px; }
+  .case-article-meta { margin-top: 18px; }
+  .case-article-body { padding: 38px 20px 48px; border-radius: 18px; }
+  .case-article-fragment p { margin-bottom: 18px; font-size: 16px; line-height: 1.82; }
+  .case-article-fragment h2 { margin-top: 48px; }
+  .case-article-fragment h3 { margin: 34px 0 16px; font-size: 23px; }
+  .case-article-images { gap: 12px; margin: 22px -4px 28px; }
+  .case-article-images figure { border-radius: 10px; }
+  .case-article-source { margin-top: 52px; padding: 26px 22px; }
+}
