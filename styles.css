@@ -6415,6 +6415,7 @@ a.news-social-card:focus-visible {
 .case-article-fragment h2 { margin: 64px 0 12px; font-size: clamp(42px, 6vw, 68px); letter-spacing: -.05em; }
 .case-article-fragment h3 { margin: 40px 0 18px; font-size: clamp(23px, 3vw, 32px); letter-spacing: -.035em; }
 .case-article-fragment:first-child h3:first-child { margin-top: 0; }
+.case-article-fragment:first-child > h2:first-child { margin-top: 0; }
 .case-article-fragment .case-article-caption { margin: -4px 0 18px; color: #737373; font-size: 13px; text-align: center; text-indent: 0; }
 .case-article-images { display: grid; gap: 18px; margin: 28px 0 34px; }
 .case-article-images figure { margin: 0; overflow: hidden; border-radius: 14px; background: #f2f2ef; }
