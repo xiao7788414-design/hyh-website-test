@@ -3020,8 +3020,17 @@ details p {
   font-size: 28px;
 }
 
-.offline-course-column > p:not(.course-index):not(.course-tagline):not(.course-core-label):not(.course-audience) {
-  margin-top: 18px;
+.course-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.25fr) minmax(0, .95fr);
+  gap: 28px;
+  margin-top: 32px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.course-detail-grid > p:first-child {
+  margin: 0;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.7;
@@ -3104,7 +3113,7 @@ details p {
 }
 
 #offline-course .course-core-label {
-  margin: 26px 0 12px;
+  margin: 0 0 12px;
   color: var(--ink);
   font-size: 15px;
   font-weight: 800;
@@ -3137,9 +3146,9 @@ details p {
 }
 
 #offline-course .course-audience {
-  margin: 28px 0 0;
-  padding-top: 18px;
-  border-top: 1px solid rgba(0, 0, 0, .1);
+  margin: 0;
+  padding-left: 28px;
+  border-left: 1px solid rgba(0, 0, 0, .1);
   color: var(--muted);
   font-size: 15px;
   line-height: 1.64;
@@ -3174,21 +3183,23 @@ details p {
 
 .course-teacher-list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 24px;
   margin-top: 20px;
 }
 
 .course-teacher {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 14px;
   align-items: start;
   padding: 18px 0;
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 .course-teacher img {
-  width: 76px;
-  height: 76px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   background: #fff;
 }
@@ -3408,6 +3419,22 @@ details p {
     border-left: 0;
   }
 
+  .course-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  #offline-course .course-audience {
+    padding-top: 20px;
+    padding-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-left: 0;
+  }
+
+  .course-teacher-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .course-signup {
     grid-template-columns: 1fr 220px;
   }
@@ -3437,6 +3464,10 @@ details p {
     align-items: baseline;
     gap: 10px;
     text-align: left;
+  }
+
+  .course-teacher-list {
+    grid-template-columns: 1fr;
   }
 
   .course-facts {
