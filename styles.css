@@ -1169,6 +1169,10 @@ details p {
   transition: transform .22s ease;
 }
 
+.legacy-case-item-contain img {
+  object-fit: contain;
+}
+
 .legacy-case-item:hover img {
   transform: scale(1.035);
 }
