@@ -18,15 +18,15 @@
 .case-dayao-page .dayao-back { display: inline-flex; margin: 0 0 28px; color: #b80f1d; font-size: 14px; font-weight: 750; text-decoration: none; }
 .case-dayao-page .dayao-case-layout { display: grid; grid-template-columns: minmax(260px, 320px) minmax(0, 700px); gap: clamp(44px, 6vw, 76px); align-items: start; justify-content: space-between; }
 .case-dayao-page .dayao-case-aside { position: sticky; top: 88px; padding: 18px 0 12px; }
-.case-dayao-page .dayao-case-kicker { margin: 0 0 18px; color: #b80f1d; font-size: 13px; font-weight: 800; letter-spacing: .08em; }
+.case-dayao-page .dayao-case-kicker { margin: 0 0 18px; color: #b80f1d; font-size: 15px; font-weight: 800; letter-spacing: .08em; }
 .case-dayao-page .dayao-case-aside h1 { margin: 0; color: #111; font-size: clamp(52px, 5vw, 72px); font-weight: 850; line-height: .95; letter-spacing: -.05em; }
 .case-dayao-page .dayao-aside-rule { width: 54px; height: 3px; margin: 22px 0 20px; background: #c90012; }
-.case-dayao-page .dayao-case-thesis { margin: 0 0 12px; color: #171717; font-size: 22px; font-weight: 760; line-height: 1.45; }
-.case-dayao-page .dayao-case-summary { margin: 0 0 22px; color: #575757; font-size: 14px; line-height: 1.7; }
+.case-dayao-page .dayao-case-thesis { margin: 0 0 14px; color: #171717; font-size: 24px; font-weight: 760; line-height: 1.45; }
+.case-dayao-page .dayao-case-summary { margin: 0 0 22px; color: #575757; font-size: 16px; line-height: 1.72; }
 .case-dayao-page .dayao-case-values { margin: 0; border-top: 1px solid rgba(17,17,17,.12); }
 .case-dayao-page .dayao-case-values > div { display: grid; grid-template-columns: 74px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(17,17,17,.1); }
-.case-dayao-page .dayao-case-values dt { color: #8b8b8b; font-size: 12px; line-height: 1.65; }
-.case-dayao-page .dayao-case-values dd { margin: 0; color: #222; font-size: 14px; font-weight: 700; line-height: 1.65; }
+.case-dayao-page .dayao-case-values dt { color: #777; font-size: 14px; line-height: 1.65; }
+.case-dayao-page .dayao-case-values dd { margin: 0; color: #222; font-size: 16px; font-weight: 700; line-height: 1.65; }
 .case-dayao-page .dayao-case-aside .case-article-meta { margin: 18px 0 0; color: #888; font-size: 13px; }
 .case-dayao-page .dayao-case-story { min-width: 0; padding: 40px; border-radius: 24px; background: #fff; box-shadow: 0 18px 54px rgba(19,19,19,.05); }
 .case-dayao-page .dayao-story-hero,
@@ -37,16 +37,16 @@
 .case-dayao-page .dayao-story-figure img,
 .case-dayao-page .dayao-story-pair img { display: block; width: 100%; height: auto; }
 .case-dayao-page .dayao-story-section { padding: 0 0 64px; margin: 0 0 64px; border-bottom: 1px solid rgba(17,17,17,.1); }
-.case-dayao-page .dayao-story-index { margin: 0 0 14px; color: #c90012; font-size: 12px; font-weight: 850; letter-spacing: .12em; }
+.case-dayao-page .dayao-story-index { margin: 0 0 14px; color: #c90012; font-size: 14px; font-weight: 850; letter-spacing: .12em; }
 .case-dayao-page .dayao-case-story h2 { margin: 0 0 22px; color: #151515; font-size: clamp(29px, 3vw, 40px); font-weight: 820; line-height: 1.22; letter-spacing: -.035em; }
-.case-dayao-page .dayao-case-story p { margin: 0 0 18px; color: #454545; font-size: 16px; line-height: 1.9; }
+.case-dayao-page .dayao-case-story p { margin: 0 0 20px; color: #3f3f3f; font-size: 18px; line-height: 1.86; }
 .case-dayao-page .dayao-story-emphasis { padding: 18px 20px; border-left: 3px solid #c90012; background: #f7f7f4; color: #1f1f1f !important; font-weight: 720; }
 .case-dayao-page .dayao-story-figure { margin-top: 30px; }
 .case-dayao-page .dayao-story-figure--compact { width: min(520px, 100%); margin-right: auto; margin-left: auto; }
 .case-dayao-page .dayao-story-figure img,
 .case-dayao-page .dayao-story-pair img { border-radius: 10px; background: #f5f5f2; }
 .case-dayao-page .dayao-story-figure figcaption,
-.case-dayao-page .dayao-story-pair figcaption { padding: 10px 4px 0; color: #858585; font-size: 12px; line-height: 1.6; text-align: left; }
+.case-dayao-page .dayao-story-pair figcaption { padding: 10px 4px 0; color: #777; font-size: 14px; line-height: 1.65; text-align: left; }
 .case-dayao-page .dayao-slogan { margin: 30px 0 0; padding: 28px 20px; border: 0; background: #c90012; color: #fff; font-size: clamp(30px, 4vw, 48px); font-weight: 900; line-height: 1.15; letter-spacing: -.04em; text-align: center; }
 .case-dayao-page .dayao-story-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
 .case-dayao-page .dayao-story-pair + .dayao-story-figure { margin-top: 38px; }
@@ -66,7 +66,7 @@
   .case-dayao-page .dayao-story-hero { margin-bottom: 48px; }
   .case-dayao-page .dayao-story-section { padding-bottom: 48px; margin-bottom: 48px; }
   .case-dayao-page .dayao-case-story h2 { font-size: 30px; }
-  .case-dayao-page .dayao-case-story p { font-size: 15px; line-height: 1.82; }
+  .case-dayao-page .dayao-case-story p { font-size: 17px; line-height: 1.82; }
   .case-dayao-page .dayao-story-pair { grid-template-columns: 1fr; gap: 24px; }
   .case-dayao-page .dayao-story-conclusion { padding: 26px 22px; }
   .case-dayao-page .dayao-story-conclusion h2 { font-size: 27px; }
