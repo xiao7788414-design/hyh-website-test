@@ -115,6 +115,13 @@
 .case-fmcg-page .fmcg-story-conclusion h2 { color: #fff; font-size: 32px; }
 .case-fmcg-page .fmcg-story-conclusion p:last-child { margin-bottom: 0; color: rgba(255,255,255,.72); }
 
+/* Original long-form case article links */
+.case-detail-page .case-external-detail-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; padding: 12px 16px; border: 1px solid rgba(184,15,29,.34); border-radius: 999px; color: #b80f1d; font-size: 15px; font-weight: 800; line-height: 1.2; text-decoration: none; transition: color .2s ease, background-color .2s ease, border-color .2s ease; }
+.case-detail-page .case-external-detail-link:hover { border-color: #b80f1d; background: #b80f1d; color: #fff; }
+.case-detail-page .case-external-detail-link--aside { width: 100%; margin-top: 22px; }
+.case-detail-page .case-external-detail-link span { font-size: 17px; line-height: 1; }
+.case-detail-page .case-external-detail-footer { display: flex; justify-content: flex-end; margin-top: 28px; padding-top: 28px; border-top: 1px solid rgba(17,17,17,.1); }
+
 @media (max-width: 900px) {
   .case-fmcg-page .fmcg-case-main { padding: 92px 16px 72px; }
   .case-fmcg-page .fmcg-case-layout { grid-template-columns: 1fr; gap: 32px; }
@@ -130,6 +137,7 @@
   .case-fmcg-page .fmcg-story-pair { grid-template-columns: 1fr; gap: 24px; }
   .case-fmcg-page .fmcg-story-conclusion { padding: 26px 22px; }
   .case-fmcg-page .fmcg-story-conclusion h2 { font-size: 27px; }
+  .case-detail-page .case-external-detail-footer .case-external-detail-link { width: 100%; }
 }
 
 
