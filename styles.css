@@ -978,10 +978,121 @@ details p {
   white-space: nowrap;
 }
 
+.home-library-showcase {
+  margin: 40px 0 44px;
+  padding: clamp(26px, 3vw, 42px);
+  overflow: hidden;
+  background: var(--soft);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 12px;
+}
+
+.home-library-header {
+  max-width: 980px;
+}
+
+.home-library-header h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(28px, 2.6vw, 40px);
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.home-library-header p {
+  max-width: 920px;
+  margin: 16px 0 0;
+  color: rgba(29, 29, 31, .72);
+  font-size: 18px;
+  font-weight: 560;
+  line-height: 1.75;
+}
+
+.home-library-rail {
+  display: flex;
+  gap: 18px;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-top: 30px;
+  padding: 4px 2px 18px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-library-book {
+  display: grid;
+  flex: 0 0 clamp(166px, 16vw, 210px);
+  grid-template-rows: 264px auto;
+  gap: 14px;
+  min-width: 0;
+  padding: 18px 16px 16px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .07);
+  border-radius: 8px;
+  scroll-snap-align: start;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-library-book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, .08);
+}
+
+.home-library-book:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+.home-library-book img {
+  width: 100%;
+  height: 264px;
+  object-fit: contain;
+  background: #fff;
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, .12));
+}
+
+.home-library-book span {
+  font-size: 15px;
+  font-weight: 760;
+  line-height: 1.45;
+  text-align: center;
+}
+
 @media (max-width: 760px) {
   .featured-cases-section .section-title h2 {
     font-size: 21px;
     line-height: 1.15;
+  }
+
+  .home-library-showcase {
+    margin: 30px 0 36px;
+    padding: 24px 18px;
+  }
+
+  .home-library-header h3 {
+    font-size: 26px;
+  }
+
+  .home-library-header p {
+    font-size: 16px;
+    line-height: 1.68;
+  }
+
+  .home-library-rail {
+    gap: 14px;
+    margin-top: 24px;
+  }
+
+  .home-library-book {
+    flex-basis: min(62vw, 176px);
+    grid-template-rows: 218px auto;
+    padding: 14px 12px;
+  }
+
+  .home-library-book img {
+    height: 218px;
   }
 }
 
