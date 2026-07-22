@@ -6482,6 +6482,59 @@ a.news-social-card:focus-visible {
 .case-article-images figure { margin: 0; overflow: hidden; border-radius: 14px; background: #f2f2ef; }
 .case-article-images img { display: block; width: 100%; height: auto; }
 
+/* Dayao editorial pilot: content-led hierarchy, attached captions, denser media */
+.case-dayao-page .case-article-body { padding-right: clamp(22px, 4.5vw, 54px); padding-left: clamp(22px, 4.5vw, 54px); }
+.case-dayao-page .case-article-fragment h2 { max-width: 860px; }
+.case-dayao-page .case-article-fragment h3 { max-width: 820px; }
+.case-dayao-page .case-quote cite { display: block; margin-top: 12px; color: #777; font-size: 13px; font-style: normal; font-weight: 650; letter-spacing: .02em; }
+.case-dayao-page .dayao-roadmap,
+.case-dayao-page .dayao-problems,
+.case-dayao-page .dayao-ip-principles { max-width: 920px; margin: 28px auto 54px; padding: 0; list-style: none; }
+.case-dayao-page .dayao-roadmap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; counter-reset: dayao-roadmap; }
+.case-dayao-page .dayao-roadmap li { position: relative; min-height: 106px; box-sizing: border-box; padding: 20px 20px 20px 62px; border: 1px solid rgba(17, 17, 17, .08); border-radius: 14px; background: #f7f7f4; counter-increment: dayao-roadmap; }
+.case-dayao-page .dayao-roadmap li::before { position: absolute; top: 20px; left: 20px; color: #c90012; font-size: 13px; font-weight: 850; content: counter(dayao-roadmap, decimal-leading-zero); }
+.case-dayao-page .dayao-roadmap strong,
+.case-dayao-page .dayao-roadmap span,
+.case-dayao-page .dayao-problems strong,
+.case-dayao-page .dayao-problems span,
+.case-dayao-page .dayao-ip-principles strong,
+.case-dayao-page .dayao-ip-principles span { display: block; }
+.case-dayao-page .dayao-roadmap strong { margin-bottom: 6px; color: #171717; font-size: 17px; line-height: 1.45; }
+.case-dayao-page .dayao-roadmap span { color: #555; font-size: 15px; line-height: 1.65; }
+.case-dayao-page .dayao-pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; max-width: 980px; margin: 28px auto 48px; }
+.case-dayao-page .dayao-pillars article { min-width: 0; padding: 24px; border-top: 4px solid #c90012; border-radius: 0 0 14px 14px; background: #f7f7f4; }
+.case-dayao-page .dayao-pillars article > span { color: #c90012; font-size: 13px; font-weight: 850; letter-spacing: .08em; }
+.case-dayao-page .dayao-pillars h3 { margin: 10px 0 12px; font-size: 20px; line-height: 1.4; }
+.case-dayao-page .dayao-pillars p { margin: 0; font-size: 15px; line-height: 1.7; text-indent: 0; }
+.case-dayao-page .dayao-problems { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; counter-reset: dayao-problem; }
+.case-dayao-page .dayao-problems li { position: relative; padding: 24px 24px 24px 68px; border: 1px solid rgba(201, 0, 18, .14); border-radius: 14px; counter-increment: dayao-problem; }
+.case-dayao-page .dayao-problems li::before { position: absolute; top: 25px; left: 24px; color: #c90012; font-size: 13px; font-weight: 850; content: counter(dayao-problem, decimal-leading-zero); }
+.case-dayao-page .dayao-problems strong { margin-bottom: 10px; font-size: 17px; line-height: 1.55; }
+.case-dayao-page .dayao-problems span { color: #555; font-size: 15px; line-height: 1.72; }
+.case-dayao-page .dayao-core-task strong { display: block; margin-bottom: 8px; color: #c90012; font-size: 13px; letter-spacing: .08em; }
+.case-dayao-page .dayao-sublead { margin-top: 54px; font-size: 20px; font-weight: 700; line-height: 1.65; text-indent: 0; }
+.case-dayao-page .dayao-step-number { display: block; margin-bottom: 8px; color: #c90012; font-size: 13px; font-weight: 850; letter-spacing: .08em; }
+.case-dayao-page .dayao-ip-principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; counter-reset: dayao-ip; }
+.case-dayao-page .dayao-ip-principles li { position: relative; padding: 20px 20px 20px 62px; border-radius: 14px; background: #f7f7f4; counter-increment: dayao-ip; }
+.case-dayao-page .dayao-ip-principles li::before { position: absolute; top: 20px; left: 20px; color: #c90012; font-size: 13px; font-weight: 850; content: counter(dayao-ip, decimal-leading-zero); }
+.case-dayao-page .dayao-ip-principles strong { margin-bottom: 6px; font-size: 17px; line-height: 1.45; }
+.case-dayao-page .dayao-ip-principles span { color: #555; font-size: 15px; line-height: 1.65; }
+.case-dayao-page .case-article-images { gap: 14px; margin: 30px 0 40px; }
+.case-dayao-page .case-article-images figure,
+.case-dayao-page .dayao-media-group { background: #fff; }
+.case-dayao-page .case-article-images figcaption,
+.case-dayao-page .dayao-media-group > figcaption { padding: 10px 12px 0; color: #717171; font-size: 14px; line-height: 1.55; text-align: center; }
+.case-dayao-page .dayao-media-natural > figure,
+.case-dayao-page .case-article-images figure.dayao-media-natural { width: min(760px, 100%); margin-right: auto; margin-left: auto; }
+.case-dayao-page .dayao-media-group { max-width: 100%; margin: 30px 0 40px; }
+.case-dayao-page .dayao-media-pair,
+.case-dayao-page .dayao-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.case-dayao-page .dayao-media-pair img,
+.case-dayao-page .dayao-media-grid > img { display: block; width: 100%; height: auto; min-height: 0; object-fit: contain; border-radius: 12px; }
+.case-dayao-page .case-article-images.dayao-media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-dayao-page .case-article-images.dayao-media-grid figure { min-width: 0; }
+.case-dayao-page .case-article-images.dayao-media-grid img { height: auto; object-fit: contain; }
+
 @media (max-width: 780px) {
   .case-longform-main { padding-bottom: 80px; }
   .case-longform-hero { margin-bottom: 16px; }
@@ -6504,4 +6557,21 @@ a.news-social-card:focus-visible {
   .case-article-images { gap: 12px; margin: 22px -4px 28px; }
   .case-article-images figure { border-radius: 10px; }
   .case-longform-hero--stacked { grid-template-columns: 1fr; }
+  .case-dayao-page .case-article-body { padding-right: 18px; padding-left: 18px; }
+  .case-dayao-page .dayao-roadmap,
+  .case-dayao-page .dayao-pillars,
+  .case-dayao-page .dayao-problems,
+  .case-dayao-page .dayao-ip-principles { grid-template-columns: 1fr; }
+  .case-dayao-page .dayao-roadmap { margin-bottom: 42px; }
+  .case-dayao-page .dayao-pillars { margin-bottom: 38px; }
+  .case-dayao-page .dayao-pillars article { padding: 20px; }
+  .case-dayao-page .dayao-problems li { padding: 20px 20px 20px 62px; }
+  .case-dayao-page .dayao-problems li::before { top: 21px; left: 20px; }
+  .case-dayao-page .case-article-images { margin: 24px 0 32px; }
+  .case-dayao-page .dayao-media-group { margin: 24px 0 32px; }
+  .case-dayao-page .dayao-media-pair,
+  .case-dayao-page .dayao-media-grid,
+  .case-dayao-page .case-article-images.dayao-media-grid { grid-template-columns: 1fr; }
+  .case-dayao-page .case-article-images figcaption,
+  .case-dayao-page .dayao-media-group > figcaption { padding-top: 8px; font-size: 13px; }
 }
