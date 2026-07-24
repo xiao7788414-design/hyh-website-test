@@ -1,6 +1,6 @@
 const menuButton = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
-const AI_AGENT_URL = "http://14.103.37.202/app/web/home";
+const AI_AGENT_URL = "https://ai.huayuhua.com/app/web/home";
 const isEnglishPage = document.documentElement.lang.toLowerCase().startsWith("en");
 
 const megaMenuData = {
