@@ -2142,6 +2142,14 @@ details p {
   gap: 18px;
 }
 
+.about-page #consulting-service {
+  order: -2;
+}
+
+.about-page #company {
+  order: -1;
+}
+
 .content-block {
   padding: 56px;
   background: #fff;
