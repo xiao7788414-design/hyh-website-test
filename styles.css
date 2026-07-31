@@ -1092,6 +1092,33 @@ details p {
   white-space: nowrap;
 }
 
+.home-latest-section {
+  padding: clamp(64px, 7vw, 100px) 0 0;
+  background: #fff;
+}
+
+.home-latest-header {
+  width: var(--max);
+  margin: 0 auto clamp(24px, 2.4vw, 36px);
+}
+
+.home-latest-header h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(32.2px, 3.01vw, 49px);
+  line-height: 1.08;
+  font-weight: 850;
+}
+
+.home-latest-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+}
+
 .home-library-showcase {
   margin: 40px 0 44px;
   padding: clamp(26px, 3vw, 42px);
@@ -6654,6 +6681,14 @@ a.news-social-card:focus-visible {
 }
 
 @media (max-width: 980px) {
+  .home-latest-section {
+    padding-top: 56px;
+  }
+
+  .home-latest-header h2 {
+    font-size: 23.8px;
+  }
+
   .home-page .home-million-award-copy > h2 {
     font-size: 26.6px;
   }
