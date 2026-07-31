@@ -461,6 +461,38 @@ document.querySelectorAll("[data-founded-years]").forEach((node) => {
   }
 });
 
+const homeLatestVideo = document.querySelector(".home-latest-video");
+
+if (homeLatestVideo) {
+  let homeLatestVideoInView = true;
+
+  const playHomeLatestVideo = () => {
+    if (!homeLatestVideoInView || document.hidden) return;
+    homeLatestVideo.play().catch(() => {
+      // Some browser or system-level data-saving settings can still block autoplay.
+    });
+  };
+
+  const homeLatestVideoObserver = new IntersectionObserver(([entry]) => {
+    homeLatestVideoInView = entry.isIntersecting && entry.intersectionRatio > 0;
+    if (homeLatestVideoInView) {
+      playHomeLatestVideo();
+    } else {
+      homeLatestVideo.pause();
+    }
+  }, { threshold: [0, 0.01] });
+
+  homeLatestVideoObserver.observe(homeLatestVideo);
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      homeLatestVideo.pause();
+    } else {
+      playHomeLatestVideo();
+    }
+  });
+}
+
 const latestCourseTrigger = document.querySelector("[data-latest-course-trigger]");
 const latestCourseDialog = document.querySelector("#latest-course-dialog");
 const latestCourseClose = document.querySelector("[data-latest-course-close]");
