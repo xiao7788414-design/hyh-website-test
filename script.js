@@ -474,13 +474,13 @@ if (homeLatestVideo) {
   };
 
   const homeLatestVideoObserver = new IntersectionObserver(([entry]) => {
-    homeLatestVideoInView = entry.isIntersecting && entry.intersectionRatio > 0;
+    homeLatestVideoInView = entry.isIntersecting && entry.intersectionRatio >= 0.4;
     if (homeLatestVideoInView) {
       playHomeLatestVideo();
     } else {
       homeLatestVideo.pause();
     }
-  }, { threshold: [0, 0.01] });
+  }, { threshold: [0, 0.4] });
 
   homeLatestVideoObserver.observe(homeLatestVideo);
 
