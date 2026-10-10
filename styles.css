@@ -1133,7 +1133,15 @@ details p {
 .client-case-item--full-art img {
   object-fit: contain;
   object-position: center;
-  background: #fff;
+  background: transparent;
+}
+
+.client-case-item--songhuichu {
+  background: #20c2b4;
+}
+
+.client-case-item--shengnong {
+  background: #3abd42;
 }
 
 .client-case-item:hover img,
