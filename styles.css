@@ -5376,6 +5376,21 @@ details p {
   margin-top: 12px;
 }
 
+.no-pitch-panel.no-pitch-panel--partnership h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.35;
+}
+
+.no-pitch-panel.no-pitch-panel--partnership p {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.no-pitch-panel.no-pitch-panel--partnership p + p {
+  margin-top: 16px;
+}
+
 .career-mail {
   display: grid;
   gap: 12px;
